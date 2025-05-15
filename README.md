@@ -31,6 +31,6 @@ Una aplicación web simple para registrar, visualizar, filtrar y exportar tus ga
 1. Cloná este repositorio:
 
    bash
-git clone https://github.com/ivancodejav/gestor-de-datos.git <br>
-cd gestor-de-datos
+git clone https://github.com/ivancodejav/gestor-de-gastos.git <br>
+cd gestor-de-gastos
 
