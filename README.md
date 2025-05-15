@@ -1,6 +1,8 @@
 #  Gestor de Gastos
 
-Una aplicación web simple para registrar, visualizar, filtrar y exportar tus gastos. Construida con HTML, CSS y JavaScript puro.
+Una aplicación web simple para registrar, visualizar, filtrar y exportar tus gastos. Construida con HTML, CSS y JavaScript puro. <br>
+puedes verlas desde https://ivancodejav.github.io/Gestor-de-gastos/
+
 
 ##  Funcionalidades
 
