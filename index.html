@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de Gastos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Gestor de Gastos</h1>
+
+    <form id="formulario-gasto">
+      <input type="text" id="descripcion" placeholder="Descripción del gasto" required>
+      <input type="number" id="monto" placeholder="Monto" required>
+      <input type="date" id="fecha" required>
+      
+      <select id="categoria" required>
+        <option value="">Categoría</option>
+        <option value="comida">Comida</option>
+        <option value="entretenimiento">Entretenimiento</option>
+        <option value="transporte">Transporte</option>
+        <option value="hogar">Gastos del hogar</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <button type="submit">Agregar gasto</button>
+    </form>
+    
+    <section class="filtros">
+      <h3>Filtros</h3>
+      <select id="filtro-categoria">
+        <option value="">Todas</option>
+        <option value="comida">Comida</option>
+        <option value="entretenimiento">Entretenimiento</option>
+        <option value="transporte">Transporte</option>
+        <option value="hogar">Gastos del hogar</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <input type="date" id="filtro-inicio">
+      <input type="date" id="filtro-fin">
+      <button id="btn-aplicar-filtros">Aplicar</button>
+      <button id="btn-limpiar-filtros">Limpiar</button>
+    </section>
+
+    <h2>Total gastado: $<span id="total">0</span></h2>
+    <ul id="lista-gastos"></ul>
+
+    <button id="btn-exportar-csv">Exportar a CSV</button>
+
+    <canvas id="grafico-gastos" width="400" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #615151, #e0e0e0);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.contenedor {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ddd5d5; 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form,
+.filtros,
+#grafico-gastos {
+  margin-bottom: 20px;
+}
+
+.filtros {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.02);
+}
+
+/* Botón específico para eliminar */
+li button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+li button:hover {
+  background-color: #cc0000;
+}
